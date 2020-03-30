@@ -4,12 +4,14 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- <script src="https://kit.fontawesome.com/efca709025.js" crossorigin="anonymous"></script> -->
 		<title>Sneha's Art Gallery</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<main>
 			<nav>
+				<p style="color: black;padding: 10px;background: #E5E4E4;font-size: 23px;" class="toggle-btn"><i class="fas fa-bars"></i></p>
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Gallery</a></li>
@@ -18,17 +20,40 @@
 				</ul>
 			</nav>
 			<h1 class="hero">Welcome to Sneha's Art Gallery !</h1>
-
+			<div class="btn-div">
+			<a href="#" class="button">View Full Gallery</a>
+		</div>
 			<p class="note">
 				Hi, I am Sneha and welcome to my Personal Art Gallery. Here you will get
-				all my paintings and all necessary info to contact me. 
+				all my paintings and all necessary info to contact me.
 			</p>
+			<center>
+			<div class="pics">
+				<div class="row-1">
+					<img src="assets/1.jpg" alt="Pic 1"/>
+					<img src="assets/2.jpg" alt="Pic 1"/>
+					<img src="assets/3.jpg" alt="Pic 1"/>
+				</div>
+				<div class="row-2">
+					<img src="assets/4.jpg" alt="Pic 1"/>
+					<img src="assets/5.jpg" alt="Pic 1"/>
+					<img src="assets/6.jpg" alt="Pic 1"/>
+				</div>
+			</div>
+			</center>
+
 		</main>
+
+		<p class="copyright" style="color: white;text-align: center;margin-bottom: 30px;font-size: 0.8rem;font-weight: 100;">
+			&copy; 2020, Designed and Developed by Sonu
+		</p>
 	</body>
 	<script src="jquery-3.4.0.min.js"></script>
 	<script>
-		$(document).ready(function(){
-		
+	$(document).ready(function(){
+			$(".toggle-btn").on("click", function(){
+					$("nav").toggleClass("active");
+			});
 	})
 	</script>
 </html>
