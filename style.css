@@ -17,6 +17,7 @@ main{
 	box-shadow: 0px 0px 10px 4px grey;
 	background: white;
     margin-bottom: 30px;
+    padding-bottom: 85px;
 }
 nav{
 	width: 100%;
@@ -46,7 +47,7 @@ nav ul li a:hover{
 	text-align: center;
 	margin-top: 30px;
 	font-weight: 100;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	font-size: 50px;
 }
 
@@ -105,37 +106,66 @@ nav ul li a:hover{
 .profile .social a:hover{
 	color: lime;
 }
-.portraits, .cc, .litpen{
+.portraits, .cc, .litpen, .sicw, .ccr{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 }
-.portraits h1, .cc h1, .litpen h1{
+.portraits h1, .cc h1, .litpen h1, .sicw h1, .rs h1, .ccr h1{
 	padding: 8px 0px 8px 0px;
 	width: 100%;
 	text-align: center;
 	background: #FFE039;
 }
-.portraits .row, .cc .row, .litpen .row{
+.portraits .row, .cc .row, .litpen .row, .sicw .row, .rs .row, .ccr .row{
 	width: 100%;
 	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-around;
 }
-.portraits section img, .cc section img, .litpen section img{
+.portraits section img, .cc section img, .litpen section img, .sicw section img, .rs section img, .ccr section img{
 	height: 220px;
 	width: 220px;
 	margin: auto;
 }
-.portraits section p, .cc section p, .litpen section p{
+.portraits section p, .cc section p, .litpen section p, .sicw section p, .rs section p, .ccr section p{
 	font-size: 1.1rem;
 	font-weight: bold;
 	background: #B6E9FD;
 	padding: 8px;
 }
-
+#frow{
+	margin-top: 30px;
+}
+.card{
+	display: flex;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	font-size: 20px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px grey;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+.card p{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.card a {
+	text-decoration: none;
+	color: black;
+	transition: 0.3s ease;
+}
+.card a:hover{
+	color: #FF3A00;
+}
 
 
 
@@ -155,7 +185,7 @@ nav ul li a:hover{
 		width: 96%;
 	}
 	.hero{
-		font-size: 4rem;
+		font-size: 3.5rem;
 		margin-bottom: 20px;
 		width: 98%;
 	}
@@ -201,17 +231,23 @@ nav ul li a:hover{
   .profile .social a{
   	font-size: 30px;
   }
-  .portraits .row, .cc .row, .litpen.row{
+
+  .portraits .row, .cc .row, .litpen .row, .sw .row, .rs .row, .ccr .row{
   	flex-direction: column;
   	align-items: center;
+  	margin-bottom: 0px;
   }
-  .portraits section, .cc section, .litpen section{
-  	margin-bottom: 20px;
+  .portraits section, .cc section, .litpen section, .sicw section, .rs section, .ccr section{
   	width: 70%;
   	text-align: center;
+  	margin-bottom: 0px;
   }
-  .portraits section img, .cc section img, .litpen section img{
+  .portraits section img, .cc section img, .litpen section img, .sicw section img, .rs section img, .ccr section img{
 	width: 100%;
 	height: 70%;
+	margin-bottom: 0px;
+  }
+  .card{
+  	width: 78%;
   }
 }
