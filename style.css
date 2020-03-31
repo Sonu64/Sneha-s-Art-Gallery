@@ -118,6 +118,8 @@ nav ul li a:hover{
 	width: 100%;
 	text-align: center;
 	background: #FFE039;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .portraits .row, .cc .row, .litpen .row, .sicw .row, .rs .row, .ccr .row{
 	width: 100%;
@@ -137,7 +139,7 @@ nav ul li a:hover{
 	padding: 8px;
 }
 #frow{
-	margin-top: 30px;
+	margin-top: 40px;
 }
 .card{
 	display: flex;
@@ -232,15 +234,16 @@ nav ul li a:hover{
   	font-size: 30px;
   }
 
-  .portraits .row, .cc .row, .litpen .row, .sw .row, .rs .row, .ccr .row{
+  .portraits .row, .cc .row, .sicw .row, .litpen .row, .sw .row, .rs .row, .ccr .row{
   	flex-direction: column;
+  	justify-content: space-around;
   	align-items: center;
   	margin-bottom: 0px;
   }
   .portraits section, .cc section, .litpen section, .sicw section, .rs section, .ccr section{
   	width: 70%;
   	text-align: center;
-  	margin-bottom: 0px;
+  	margin-bottom: 30px;
   }
   .portraits section img, .cc section img, .litpen section img, .sicw section img, .rs section img, .ccr section img{
 	width: 100%;
