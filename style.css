@@ -201,6 +201,9 @@ nav ul li a:hover{
 	main{
 		width: 96%;
 	}
+	.bio {
+		width: 60%;
+	}
 	.hero{
 		font-size: 3.5rem;
 		margin-bottom: 20px;
